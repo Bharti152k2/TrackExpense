@@ -1,0 +1,39 @@
+.category-data {
+  width: 750px;
+  margin: 100px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.category-data input {
+  margin: 30px auto;
+  width: 300px;
+}
+table {
+  border: 2px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead tr th {
+  border: 2px solid darkblue;
+  font-size: 24px;
+  background-color: rgb(202, 242, 255);
+  padding: 10px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 255, 0.658);
+}
+table tbody tr td {
+  border: 2px solid darkblue;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+}
+table tbody tr:hover {
+  background-color: rgb(145, 227, 255);
+}
+.dltbtn {
+  background-color: red;
+}
+.edtbtn {
+  background-color: rgba(3, 3, 217, 0.815);
+}

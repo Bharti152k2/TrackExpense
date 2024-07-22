@@ -1,0 +1,41 @@
+.expenses {
+  border: 2px solid darkblue;
+  width: 900px;
+  margin: 120px auto;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 2px gray;
+}
+.side {
+  width: 50%;
+  /* border: 2px solid green; */
+  padding: 50px 30px;
+  background-image: url("../assets/track.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+.link {
+  padding: 50px 20px;
+  width: 50%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(18, 18, 175, 0.427);
+  border-radius: 0px 10px 10px 0px;
+}
+.link p {
+  font-size: 20px;
+  text-align: justify;
+  color: black;
+}
+.link a {
+  color: darkblue;
+  /* border: 2px solid red; */
+  font-size: 22px;
+  margin-left: 10px;
+}
+.link a:hover {
+  text-decoration: underline;
+}

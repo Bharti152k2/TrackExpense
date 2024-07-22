@@ -1,0 +1,58 @@
+.expense-div {
+  width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 1px 1px 10px 1px gray;
+  border-radius: 15px;
+}
+.expense-div h1 {
+  color: darkblue;
+  text-align: center;
+}
+.expense-form {
+  padding: 20px;
+}
+.date-divs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.amount-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input,
+textarea {
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  height: 35px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+.date-divs input:focus,
+.amount-div input:focus,
+textarea:focus {
+  outline: 2px solid #1a73e8;
+  box-shadow: 0px 0px 2px 1px #1a73e8;
+  border: none;
+}
+label {
+  font-size: 20px;
+  color: darkblue;
+}
+button {
+  background-color: green;
+}
+.popup {
+  background-color: rgb(180, 250, 237);
+  text-align: center;
+  font-size: 20px;
+  padding: 17px;
+  color: darkgreen;
+  width: 450px;
+  margin: 20px auto;
+}
+.select span {
+  display: none;
+}

@@ -1,0 +1,48 @@
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: darkblue;
+  gap: 20px;
+  padding-left: 300px;
+}
+.links {
+  margin-left: 65%;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  transition: all 1s ease-in-out;
+}
+a:active,
+nav a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -250px;
+}
+span h1 {
+  font-family: algerian;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.514);
+}
+span h2 {
+  color: gray;
+}
+button {
+  outline: none;
+  border: none;
+  background: rgba(255, 0, 0, 0.849);
+  padding: 4px 9px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+}

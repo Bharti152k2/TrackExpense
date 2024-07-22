@@ -1,0 +1,11 @@
+.formdiv {
+  margin: 100px auto;
+  width: 420px;
+}
+.formdiv h1 {
+  color: brown;
+  text-align: center;
+}
+.formdiv a {
+  margin-left: 70px;
+}

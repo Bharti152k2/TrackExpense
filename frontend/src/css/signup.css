@@ -1,0 +1,81 @@
+.formdiv {
+  /* border: 2px solid red; */
+  width: 450px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 1px gray;
+  padding: 30px 30px;
+  background-color: rgb(214, 244, 255);
+}
+.formdiv h2 {
+  text-align: center;
+  font-weight: bolder;
+  color: brown;
+}
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+input {
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  height: 35px;
+  padding-left: 15px;
+  font-size: 16px;
+  /* background-color: rgb(229, 243, 248); */
+}
+input:focus {
+  outline: 2px solid rgba(0, 0, 139, 0.669);
+  border: none;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  padding: 8px;
+  width: 110px;
+  font-size: 17px;
+  margin: 2px auto;
+  transition: all 1s ease-in-out;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  background-color: rgb(4, 103, 4);
+}
+.gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gender label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gender label:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(4, 69, 91);
+}
+.gender input:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-left: 100px;
+}
+.popup {
+  background-color: rgb(180, 250, 237);
+  text-align: center;
+  font-size: 20px;
+  padding: 17px;
+  color: darkgreen;
+  width: 450px;
+  margin: 20px auto;
+}
