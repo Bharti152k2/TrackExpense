@@ -18,7 +18,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const apiUrl = process.env.REACT_APP_API_URL;
+    const apiUrl = "https://expense-tracker-backend-ufdt.onrender.com";
 
     fetch(`${apiUrl}/your-endpoint`)
       .then((response) => response.json())
