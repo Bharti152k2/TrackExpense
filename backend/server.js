@@ -9,15 +9,14 @@ const connectDb = require("./database/connectdb.js");
 let app = express();
 
 app.use(express.json());
-
 app.use(
   cors({
     origin: ["http://localhost:5173", "https://expensesmanagerui.netlify.app"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
 );
-
 app.use("/api", routes);
 
 //* creating port for servers
