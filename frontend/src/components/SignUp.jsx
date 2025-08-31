@@ -44,7 +44,7 @@ function SignUp() {
     if (fdataLength === 0) {
       try {
         let { data } = await axios.post(
-          `http://localhost:3000/api/data/signup`,
+          `https://expense-tracker-backend-ufdt.onrender.com/api/data/signup`,
           signupData
         );
         console.log(data);

@@ -19,7 +19,7 @@ function Category() {
   let getExpenses = async (filterCategory = "") => {
     try {
       let { data } = await axios.get(
-        `http://localhost:3000/api/getfilteredexpense`,
+        `https://expense-tracker-backend-ufdt.onrender.com/api/getfilteredexpense`,
         {
           params: { category: filterCategory },
         }
@@ -48,7 +48,9 @@ function Category() {
       return;
     }
     try {
-      await axios.delete(`http://localhost:3000/api/deleteexpense/${id}`);
+      await axios.delete(
+        `https://expense-tracker-backend-ufdt.onrender.com/api/deleteexpense/${id}`
+      );
       getExpenses();
     } catch (err) {
       console.log(err);

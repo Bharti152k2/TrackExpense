@@ -14,9 +14,12 @@ function Spendings() {
     try {
       setPeriod(period);
 
-      let { data } = await axios.get(`http://localhost:3000/api/spendings`, {
-        params: { period: period },
-      });
+      let { data } = await axios.get(
+        `https://expense-tracker-backend-ufdt.onrender.com/api/spendings`,
+        {
+          params: { period: period },
+        }
+      );
       console.log(data);
       setTotalSpent(data.data.totalSpent);
       setCategorySpent(data.data.categorizedData);

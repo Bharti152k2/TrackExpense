@@ -56,7 +56,7 @@ function UpdateCategory() {
   let getSingleExpense = async () => {
     try {
       let { data } = await axios.get(
-        `http://localhost:3000/api/getoneexpense/${id}`
+        `https://expense-tracker-backend-ufdt.onrender.com/api/getoneexpense/${id}`
       );
       console.log(data);
       setExpenseData(data);
@@ -89,7 +89,7 @@ function UpdateCategory() {
     if (fdataLength === 0) {
       try {
         let { data } = await axios.put(
-          `http://localhost:3000/api/updateexpense/${id}`,
+          `https://expense-tracker-backend-ufdt.onrender.com/api/updateexpense/${id}`,
           updatedExpenseData
         );
         console.log(data);

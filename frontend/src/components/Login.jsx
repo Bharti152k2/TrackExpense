@@ -36,7 +36,9 @@ function Login() {
     console.log(fdataLength);
     if (fdataLength === 0) {
       try {
-        let { data } = await axios.get("http://localhost:3000/api/userdata");
+        let { data } = await axios.get(
+          "https://expense-tracker-backend-ufdt.onrender.com/api/userdata"
+        );
         console.log(data);
         let existingUser = data.data.find((user) => {
           return (
@@ -47,7 +49,7 @@ function Login() {
         });
         if (existingUser) {
           let { data } = await axios.post(
-            `http://localhost:3000/api/data/login`,
+            `https://expense-tracker-backend-ufdt.onrender.com/api/data/login`,
             loginData
           );
           setLoginData(data);

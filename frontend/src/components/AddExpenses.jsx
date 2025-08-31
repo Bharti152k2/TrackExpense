@@ -71,7 +71,7 @@ function AddExpenses() {
     if (fdataLength === 0) {
       try {
         let { data } = await axios.post(
-          `http://localhost:3000/api/addexpense`,
+          `https://expense-tracker-backend-ufdt.onrender.com/api/addexpense`,
           updatedExpenseData
         );
         setSuccessMsg(data.message);
