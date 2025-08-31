@@ -47,8 +47,6 @@ function SignUp() {
           `https://expense-tracker-backend-ufdt.onrender.com/api/data/signup`,
           signupData
         );
-        console.log(data);
-        console.log(data.message);
         setSuccessMsg(data.message);
         setTimeout(() => {
           navigateToLogin("/login");
