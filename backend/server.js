@@ -20,12 +20,12 @@ app.use(
 app.use("/api", routes);
 
 //* creating port for servers
-
+const PORT = process.env.PORT || 3000;
 let startServer = async () => {
   try {
     await connectDb();
     console.log("MongoDB connected successfully");
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log(`Server is running on port 3000`);
     });
   } catch (error) {
